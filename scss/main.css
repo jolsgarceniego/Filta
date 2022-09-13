@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.primary {
+  color: #222;
+}
+
+.secondary {
+  color: #888;
+}
+
+.star {
+  color: #C90000;
+}
+
+.headerBg {
+  background-color: #F6F6F7;
+}
+
+.border-light {
+  border-bottom: 0.1px solid #CCC;
+}
+
+.border-dark {
+  border-bottom: 0.5px solid #222;
+}
+
+.padding-bottom {
+  padding-bottom: 20px;
+}
+
+body {
+  padding-top: 15px;
+  color: #222;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+}
+@media (max-width: 575.98px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (max-width: 767.98px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (max-width: 991.98px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (max-width: 1199.98px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media (max-width: 1399.98px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+header nav {
+  text-align: end;
+  padding: 10px 0;
+}
+header nav a {
+  font-size: 12px;
+  text-decoration: none;
+}
+
+section {
+  padding: 40px 0;
+}
+section .product-wrapper {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+section .product-wrapper .product-image {
+  width: 50%;
+  padding: 0 70px;
+}
+@media (max-width: 767.98px) {
+  section .product-wrapper .product-image {
+    width: 100%;
+    padding: 0 0 30px 0;
+  }
+}
+@media (max-width: 575.98px) {
+  section .product-wrapper .product-image {
+    width: 100%;
+    padding: 0 0 30px 0;
+  }
+}
+section .product-wrapper .product-image img {
+  width: 100%;
+}
+section .product-wrapper .product-details {
+  width: 50%;
+  padding-left: 70px;
+}
+@media (max-width: 767.98px) {
+  section .product-wrapper .product-details {
+    width: 100%;
+    padding: 0;
+  }
+}
+@media (max-width: 575.98px) {
+  section .product-wrapper .product-details {
+    width: 100%;
+    padding: 0;
+  }
+}
+@media (max-width: 767.98px) {
+  section .product-wrapper .product-details .title {
+    border-bottom: none;
+  }
+}
+@media (max-width: 575.98px) {
+  section .product-wrapper .product-details .title {
+    border-bottom: none;
+  }
+}
+section .product-wrapper .product-details .title #product-title {
+  font-size: 22px;
+}
+section .product-wrapper .product-details .price {
+  padding-top: 10px;
+}
+@media (max-width: 767.98px) {
+  section .product-wrapper .product-details .price {
+    border-bottom: none;
+  }
+}
+@media (max-width: 575.98px) {
+  section .product-wrapper .product-details .price {
+    border-bottom: none;
+  }
+}
+section .product-wrapper .product-details .price #product-price {
+  font-weight: bold;
+}
+section .product-wrapper .product-details .desc {
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+section .product-wrapper .product-details .desc p {
+  font-size: 15px;
+  line-height: 1.5em;
+}
+section .product-wrapper .product-details .size {
+  margin-bottom: 20px;
+}
+section .product-wrapper .product-details .size label {
+  text-transform: uppercase;
+  font-size: 12px;
+}
+section .product-wrapper .product-details .size #sizes {
+  display: flex;
+  margin-top: 10px;
+}
+section .product-wrapper .product-details .size #sizes li {
+  list-style: none;
+  padding: 10px 15px;
+  border: 0.5px solid #ccc;
+  margin-right: 5px;
+  font-size: 12px;
+  color: #888;
+  cursor: pointer;
+}
+section .product-wrapper .product-details .btn-wrapper {
+  display: flex;
+  justify-content: start;
+}
+section .product-wrapper .product-details .btn-wrapper button {
+  padding: 10px 25px;
+  width: 150px;
+  border: 1px solid #000;
+  background-color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+section .product-wrapper .product-details .btn-wrapper button:hover {
+  background-color: #000;
+  color: #fff;
+}/*# sourceMappingURL=main.css.map */

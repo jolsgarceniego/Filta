@@ -1,0 +1,179 @@
+@import 'media';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+$headerBg: #F6F6F7;
+$primary: #222;
+$secondary: #888;
+$star: #C90000;
+$lightGrey: #CCC;
+$darkGrey: #222;
+.primary {
+    color: $primary;
+}
+.secondary {
+    color: $secondary;
+}
+.star {
+    color: $star;
+}
+.headerBg {
+    background-color: $headerBg;
+}
+.border-light {
+    border-bottom: 0.1px solid $lightGrey;;
+}
+.border-dark {
+    border-bottom: 0.5px solid $darkGrey;
+}
+.padding-bottom {
+    padding-bottom: 20px;
+}
+body {
+    padding-top: 15px;
+    color: $primary;
+}
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    
+    @include breakpoint(sm) {
+        max-width: 540px;
+    }
+    @include breakpoint(md) {
+        max-width: 720px;
+    }
+    @include breakpoint(lg) {
+        max-width: 960px;
+    }
+    @include breakpoint(xl) {
+        max-width: 1140px;
+    }
+    @include breakpoint(xxl) {
+        max-width: 1140px;
+    }
+}
+// Header
+header {
+    nav {
+        text-align: end;
+        padding: 10px 0;
+        a {
+            font-size: 12px;
+            text-decoration: none;
+        }
+    }
+}
+section {
+    padding: 40px 0;
+    .product-wrapper {
+        display: flex;
+        justify-content: center;
+        align-content: center;        
+        flex-wrap: wrap;
+
+        .product-image {
+            width: 50%;
+            padding: 0 70px;            
+            @include breakpoint(md) {
+                width: 100%;
+                padding: 0 0 30px 0;
+            }
+            @include breakpoint(sm) {
+                width: 100%;
+                padding: 0 0 30px 0;
+            }
+            img {
+                width: 100%;
+            }
+        }
+        .product-details {
+            width: 50%;
+            padding-left: 70px;
+            @include breakpoint(md) {
+                width: 100%;     
+                padding: 0;           
+            }
+            @include breakpoint(sm) {
+                width: 100%;  
+                padding: 0;              
+            }
+            .title {
+                @include breakpoint(md) {
+                    border-bottom: none;
+                } 
+                @include breakpoint(sm) {
+                    border-bottom: none;
+                }
+                #product-title {
+                    font-size: 22px;
+                }
+            }
+            .price {
+                @include breakpoint(md) {
+                    border-bottom: none;
+                } 
+                @include breakpoint(sm) {
+                    border-bottom: none;
+                }
+                padding-top: 10px;
+                #product-price {
+                    font-weight: bold;
+                }
+            }
+            .desc {
+                padding-top: 20px;   
+                padding-bottom: 30px;
+                p {
+                    font-size: 15px;
+                    line-height: 1.5em;
+                }             
+            }
+            .size {
+                margin-bottom: 20px;
+                label {
+                    text-transform: uppercase;
+                    font-size: 12px;
+                }
+                #sizes {
+                    display: flex;
+                    margin-top: 10px;
+                    li {
+                        list-style: none;
+                        padding: 10px 15px;
+                        border: 0.5px solid #ccc;
+                        margin-right: 5px;
+                        font-size: 12px;
+                        color: $secondary;
+                        cursor: pointer;
+
+                    }
+                }
+            }
+            .btn-wrapper {
+                display: flex;
+                justify-content: start;
+                button {
+                    padding: 10px 25px;
+                    width: 150px;
+                    border: 1px solid #000;
+                    background-color: #fff;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    cursor: pointer;
+                    transition: all 0.2s ease;
+                    &:hover {
+                        background-color: #000;
+                        color: #fff
+                    }
+                }
+            }
+        }
+    }
+}
